@@ -1,0 +1,185 @@
+/* style.css - Ana stil dosyası */
+
+/* Genel stiller */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Header stilleri */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Ana slider stilleri */
+.carousel-item {
+    height: 500px;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    bottom: 60px;
+}
+
+/* Arama formu stilleri */
+.search-container {
+    margin-top: -50px;
+    position: relative;
+    z-index: 10;
+    margin-bottom: 30px;
+}
+
+/* Özellik kutuları */
+.feature-box {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+}
+
+/* Popüler rotalar */
+.popular-route {
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.popular-route:hover {
+    transform: translateY(-5px);
+}
+
+.popular-route img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Sefer kartları */
+.trip-card {
+    transition: transform 0.2s ease;
+}
+
+.trip-card:hover {
+    transform: translateY(-3px);
+}
+
+.company-logo {
+    max-width: 80px;
+    max-height: 50px;
+}
+
+.company-name {
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.trip-times {
+    position: relative;
+    padding: 0 20px;
+}
+
+.departure-time, .arrival-time {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.trip-duration-line {
+    position: relative;
+    height: 2px;
+    background-color: #ddd;
+    margin: 10px 0;
+}
+
+.trip-duration-line:before, .trip-duration-line:after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #007bff;
+    border-radius: 50%;
+    top: -3px;
+}
+
+.trip-duration-line:before {
+    left: 0;
+}
+
+.trip-duration-line:after {
+    right: 0;
+}
+
+.trip-duration {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f8f9fa;
+    padding: 0 5px;
+    font-size: 0.8rem;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #28a745;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.feature-icon {
+    font-size: 1.1rem;
+    color: #007bff;
+}
+
+/* Otobüs düzeni */
+.seat-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.corridor {
+    width: 20px;
+}
+
+.driver-seat {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+/* Duyarlı tasarım */
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 300px;
+    }
+    
+    .search-container {
+        margin-top: 20px;
+    }
+    
+    .trip-card .row {
+        flex-direction: column;
+    }
+    
+    .trip-card .col-md-2, .trip-card .col-md-3 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}

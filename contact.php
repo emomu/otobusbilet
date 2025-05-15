@@ -63,11 +63,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #ffffff;
-        }
+   
         .contact-page {
+            background-color: #ffffff;
             padding: 60px 0;
         }
         .contact-info-item {
@@ -87,6 +85,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         .contact-info-text {
             display: inline-block;
             vertical-align: middle;
+       
         }
         .contact-info-text h5 {
             margin-bottom: 5px;
@@ -105,7 +104,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         .page-header {
             background-color: #f5f5f5;
             padding: 40px 0;
-            margin-bottom: 40px;
+            margin-bottom: 10px;
         }
     </style>
 </head>
